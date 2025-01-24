@@ -20,9 +20,9 @@ def allowed_file(filename):
 
 pytesseract.pytesseract.tesseract_cmd = r'C://Program Files//Tesseract-OCR//tesseract.exe'
 
-cred = credentials.Certificate("C:/Users/kadam/OneDrive/Desktop/enzigma_project/enzigma-c2fa4-firebase-adminsdk-nvosv-55aada8b4a.json")
+cred = credentials.Certificate("fire_base_credential")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://enzigma-c2fa4-default-rtdb.firebaseio.com/'
+    'databaseURL': 'fire_base_url'
 })
 
 print("Firebase initialized successfully")
